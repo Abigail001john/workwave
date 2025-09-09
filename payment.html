@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Payment – WorkWave | Complete Your Registration</title>
+    <meta name="description" content="Complete your WorkWave registration. Pay securely via bank transfer, then confirm via WhatsApp to activate your toolkit access." />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://workwaveweb.com/payment.html" />
+
+    <!-- Social -->
+    <meta property="og:title" content="Payment – WorkWave" />
+    <meta property="og:description" content="Pay for your selected WorkWave access plan and confirm instantly on WhatsApp." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://workwaveweb.com/assets/images/form-preview.jpg" />
+    <meta property="og:url" content="https://workwaveweb.com/payment.html" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Payment – WorkWave" />
+    <meta name="twitter:description" content="Complete payment for your WorkWave plan and unlock your toolkit." />
+    <meta name="twitter:image" content="https://workwaveweb.com/assets/images/form-preview.jpg" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+    <style>
+        :root {
+            --bg: #1A002D;
+            --panel: #250038;
+            --panel-2: #2D0A45;
+            --text: #FFFFFF;
+            --accent: #FFD1A8;
+            --pink: #FF6FB1;
+            /* Custom blue gradient for CTAs */
+            --blue-1: #2663FF;
+            --blue-2: #00C2FF;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: linear-gradient(to bottom, var(--panel-2), var(--bg));
+        }
+
+        header img.logo {
+            height: 42px;
+            display: block;
+            margin: 0 auto 10px
+        }
+
+        header h1 {
+            margin: .25rem 0 0.25rem;
+            font-size: 1.8rem
+        }
+
+        header p {
+            margin: 0;
+            opacity: .9
+        }
+
+        .wrap {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 1.5rem
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1.1fr .9fr;
+            gap: 1.25rem;
+        }
+
+        @media (max-width: 960px) {
+            .grid {
+                grid-template-columns: 1fr
+            }
+        }
+
+        .card {
+            background: var(--panel);
+            border-radius: 14px;
+            padding: 1.2rem 1.2rem;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, .25);
+        }
+
+        .card h2 {
+            margin: .25rem 0 1rem;
+            font-size: 1.25rem
+        }
+
+        .muted {
+            opacity: .85
+        }
+
+        .row {
+            display: flex;
+            gap: .75rem;
+            flex-wrap: wrap
+        }
+
+        .row>* {
+            flex: 1
+        }
+
+        label {
+            display: block;
+            font-size: .95rem;
+            margin: .35rem 0 .35rem
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: .85rem .9rem;
+            border: none;
+            border-radius: 8px;
+            background: #fff;
+            color: #111;
+            font-size: 1rem;
+        }
+
+        .cta {
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+            padding: 0.95rem 1.1rem;
+            border: none;
+            border-radius: 999px;
+            cursor: pointer;
+            font-weight: 700;
+            letter-spacing: .2px;
+            transition: transform .2s ease, box-shadow .2s ease;
+            background: linear-gradient(90deg, var(--blue-1), var(--blue-2));
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .cta:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 8px 20px rgba(0, 150, 255, .35);
+        }
+
+        .ghost {
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, .2);
+            color: #fff;
+        }
+
+        /* Payment details text should be BLUE (not background) */
+
+        .payment-details p strong {
+            color: var(--blue-2);
+        }
+
+        .copy-btn {
+            margin-left: .5rem;
+            padding: .35rem .6rem;
+            border-radius: 6px;
+            border: 1px solid rgba(255, 255, 255, .25);
+            background: transparent;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .countdown {
+            text-align: center;
+            padding: 1rem;
+            border-radius: 12px;
+            background: var(--panel-2);
+            margin-top: .75rem;
+        }
+
+        .big {
+            font-size: 2.1rem;
+            font-weight: 800;
+            letter-spacing: .5px
+        }
+
+        /* Testimonials */
+
+        .testimonials {
+            background: var(--panel-2);
+            border-radius: 14px;
+            padding: 1.2rem;
+        }
+
+        .t-box {
+            background: #30004A;
+            border-radius: 12px;
+            padding: 1rem 1.1rem;
+            min-height: 140px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, .3);
+            opacity: 0;
+            transition: opacity .6s ease-in-out;
+        }
+
+        .t-box.show {
+            opacity: 1
+        }
+
+        .t-box p {
+            margin: .25rem 0;
+            line-height: 1.55
+        }
+
+        .t-box strong {
+            color: var(--accent)
+        }
+
+        .t-box em {
+            color: var(--pink);
+            font-style: normal
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.6rem 1rem;
+            color: var(--accent)
+        }
+
+        /* Helper badges */
+
+        .badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, .1);
+            padding: .25rem .5rem;
+            border-radius: 999px;
+            font-size: .75rem;
+            margin-left: .5rem;
+        }
+    </style>
+
+    <!-- JSON-LD: Service + Reviews schema -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "WorkWave Access Plans",
+            "provider": {
+                "@type": "Organization",
+                "name": "WorkWave"
+            },
+            "areaServed": "NG",
+            "offers": [{
+                    "@type": "Offer",
+                    "name": "ICON Access",
+                    "priceCurrency": "NGN",
+                    "price": "10000",
+                    "url": "https://workwaveweb.com/payment.html"
+                },
+                {
+                    "@type": "Offer",
+                    "name": "TITAN Access",
+                    "priceCurrency": "NGN",
+                    "price": "20000",
+                    "url": "https://workwaveweb.com/payment.html"
+                }
+            ],
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "reviewCount": "126"
+            },
+            "review": [{
+                    "@type": "Review",
+                    "author": {
+                        "@type": "Person",
+                        "name": "Blessing A."
+                    },
+                    "reviewBody": "Earned quickly using content gigs.",
+                    "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5"
+                    }
+                },
+                {
+                    "@type": "Review",
+                    "author": {
+                        "@type": "Person",
+                        "name": "Olamide K."
+                    },
+                    "reviewBody": "Automation tools paid off in 2 weeks.",
+                    "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5"
+                    }
+                }
+            ]
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <img src="/assets/images/logo.png" alt="WorkWave" class="logo" />
+        <h1>Complete Your Payment</h1>
+        <p class="muted">Hi <span id="helloName">there</span> — finish payment to activate your access.</p>
+    </header>
+
+    <main class="wrap">
+        <div class="grid">
+
+            <!-- LEFT: Payment + user summary -->
+            <section class="card">
+                <h2>Registration Summary</h2>
+                <div class="row">
+                    <div>
+                        <label>Full Name</label>
+                        <input id="name" readonly />
+                    </div>
+                    <div>
+                        <label>Username</label>
+                        <input id="username" readonly />
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <label>Email</label>
+                        <input id="email" readonly />
+                    </div>
+                    <div>
+                        <label>Phone</label>
+                        <input id="phone" readonly />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div>
+                        <label>Plan</label>
+                        <select id="plan">
+              <option value="10000">ICON Access (₦10,000)</option>
+              <option value="20000">TITAN Access (₦20,000)</option>
+            </select>
+                    </div>
+                    <div>
+                        <label>Amount</label>
+                        <input id="amount" readonly />
+                    </div>
+                </div>
+
+                <div class="countdown">
+                    <div>Complete payment within</div>
+                    <div class="big" id="timer">06:00</div>
+                    <div class="muted" style="margin-top:.25rem">A fresh reference will be generated if time runs out.</div>
+                </div>
+
+                <h2 style="margin-top:1.25rem;">Bank Transfer Details</h2>
+                <div class="payment-details" id="payBox">
+                    <p><strong>Account Name:</strong> <span id="accName">Chinyere Christian Rita</span>
+                        <button class="copy-btn" onclick="copyText('accName')">Copy</button></p>
+                    <p><strong>Bank:</strong> <span id="bank">FCMB</span>
+                        <button class="copy-btn" onclick="copyText('bank')">Copy</button></p>
+                    <p><strong>Account Number:</strong> <span id="accNumber">0101564972</span>
+                        <button class="copy-btn" onclick="copyText('accNumber')">Copy</button></p>
+                    <p><strong>Amount (NGN):</strong> <span id="amountText">10,000</span>
+                        <button class="copy-btn" onclick="copyText('amountText')">Copy</button></p>
+                    <p><strong>Payment Note:</strong> <span id="payNote">WW-<span id="ref"></span>-<span id="userTag"></span></span>
+                        <button class="copy-btn" onclick="copyText('payNote')">Copy</button></p>
+                </div>
+
+                <div class="row" style="margin-top:1rem;">
+                    <button class="cta" id="confirmBtn">I Have Paid — Confirm on WhatsApp</button>
+                    <button class="cta ghost" id="helpBtn">Need Help? Chat Admin</button>
+                </div>
+                <p class="muted" style="margin-top:.6rem">After payment, tap “Confirm on WhatsApp.” We’ll verify and activate your access.</p>
+            </section>
+
+            <!-- RIGHT: Testimonials -->
+            <aside class="card testimonials">
+                <h2>What members are saying<span class="badge">Verified</span></h2>
+                <div class="t-box" id="tBox"></div>
+            </aside>
+
+        </div>
+
+        <!-- Not in Nigeria -->
+        <section class="card" style="margin-top:1rem; text-align:center;">
+            <p>🌍 <strong>Not in Nigeria?</strong> Message us for alternative payment options.</p>
+            <a class="cta" target="_blank" rel="noopener" href="https://wa.me/2348162659923?text=Hi%20WorkWave%20Support%2C%20I%27m%20outside%20Nigeria%20and%20want%20to%20pay.%20Please%20guide%20me.">Chat With Admin</a>
+        </section>
+    </main>
+
+    <footer>
+        © 2025 WorkWave. All rights reserved.
+    </footer>
+
+    <script>
+        /* ===== Helpers ===== */
+        function qs(id) {
+            return document.getElementById(id);
+        }
+
+        function formatNGN(n) {
+            return Number(n).toLocaleString('en-NG');
+        }
+
+        function copyText(id) {
+            const el = qs(id);
+            const text = el ? .innerText || el ? .textContent || '';
+            navigator.clipboard.writeText(text).then(() => alert('Copied: ' + text));
+        }
+
+        function getParams() {
+            const p = new URLSearchParams(location.search);
+            return {
+                name: p.get('name') || '',
+                username: p.get('username') || '',
+                email: p.get('email') || '',
+                phone: p.get('phone') || '',
+                amount: p.get('amount') || '',
+                packageName: p.get('packageName') || ''
+            };
+        }
+
+        function loadRegData() {
+            // 1) try sessionStorage
+            try {
+                const raw = sessionStorage.getItem('ww_reg');
+                if (raw) {
+                    const d = JSON.parse(raw);
+                    return d;
+                }
+            } catch (e) {}
+            // 2) fallback: query params
+            return getParams();
+        }
+
+        function randomRef() {
+            const n = Math.floor(Math.random() * 1e9).toString().padStart(9, '0');
+            return 'WWAVE' + n;
+        }
+
+        /* ===== Page Boot ===== */
+        const d = loadRegData();
+        const helloName = d.name ? .split(' ')[0] || 'there';
+        qs('helloName').textContent = helloName;
+
+        // Fill summary
+        qs('name').value = d.name || '';
+        qs('username').value = d.username || '';
+        qs('email').value = d.email || '';
+        qs('phone').value = d.phone || '';
+
+        // Preselect plan + amount
+        const planSel = qs('plan');
+        const amountInput = qs('amount');
+        const amountText = qs('amountText');
+
+        // Prefer session value; otherwise keep incoming
+        let currentAmount = Number(d.amount) || 10000;
+        if (d.packageName && d.packageName.toLowerCase().includes('titan')) currentAmount = 20000;
+        if (d.packageName && d.packageName.toLowerCase().includes('icon')) currentAmount = 10000;
+
+        planSel.value = String(currentAmount);
+        amountInput.value = '₦' + formatNGN(currentAmount);
+        amountText.textContent = formatNGN(currentAmount);
+
+        planSel.addEventListener('change', () => {
+            currentAmount = Number(planSel.value);
+            amountInput.value = '₦' + formatNGN(currentAmount);
+            amountText.textContent = formatNGN(currentAmount);
+            // persist change so they keep same selection if they go back
+            try {
+                const cached = loadRegData() || {};
+                cached.amount = currentAmount;
+                cached.packageName = planSel.value === '20000' ? 'TITAN Access (₦20,000)' : 'ICON Access (₦10,000)';
+                sessionStorage.setItem('ww_reg', JSON.stringify(cached));
+            } catch (e) {}
+            buildNote(); // refresh payment note
+        });
+
+        // Build Payment Note with unique ref and username tag
+        const refEl = qs('ref');
+        const userTagEl = qs('userTag');
+        const payNoteEl = qs('payNote');
+
+        function buildNote() {
+            const ref = randomRef();
+            const uname = (qs('username').value || 'user').replace(/\s+/g, '').slice(0, 16);
+            refEl.textContent = ref;
+            userTagEl.textContent = uname;
+            return `WW-${ref}-${uname}`;
+        }
+        const currentNote = buildNote();
+
+        /* ===== Countdown (6 minutes) ===== */
+        const timerEl = qs('timer');
+        let secs = 6 * 60;
+
+        function tick() {
+            const m = String(Math.floor(secs / 60)).padStart(2, '0');
+            const s = String(secs % 60).padStart(2, '0');
+            timerEl.textContent = `${m}:${s}`;
+            if (secs <= 0) {
+                // regenerate reference and give them a nudge
+                const newNote = buildNote();
+                alert('Timer expired. A new payment note/reference has been generated: ' + newNote);
+                secs = 6 * 60;
+            } else {
+                secs--;
+            }
+        }
+        tick();
+        setInterval(tick, 1000);
+
+        /* ===== WhatsApp actions ===== */
+        const ADMIN = '2348162659923';
+
+        function buildWAConfirmMessage() {
+            const pkgName = planSel.value === '20000' ? 'TITAN Access (₦20,000)' : 'ICON Access (₦10,000)';
+            const payload =
+                `✅ PAYMENT CONFIRMATION – WorkWave
+
+Full Name: ${qs('name').value}
+Username: ${qs('username').value}
+Email: ${qs('email').value}
+Phone: ${qs('phone').value}
+
+Selected Plan: ${pkgName}
+Amount: ₦${formatNGN(currentAmount)}
+Payment Note/Ref: ${payNoteEl.textContent}
+
+Date/Time: ${new Date().toLocaleString()}
+
+I have completed the transfer. Please verify and activate my access.`;
+            return payload;
+        }
+
+        qs('confirmBtn').addEventListener('click', () => {
+            const msg = encodeURIComponent(buildWAConfirmMessage());
+            window.open(`https://wa.me/${ADMIN}?text=${msg}`, '_blank', 'noopener');
+        });
+
+        qs('helpBtn').addEventListener('click', () => {
+            const msg = encodeURIComponent('Hi WorkWave Support, I need help completing my payment.');
+            window.open(`https://wa.me/${ADMIN}?text=${msg}`, '_blank', 'noopener');
+        });
+
+        /* ===== Testimonials (10 entries, rotate every 7s) ===== */
+        const testimonials = [{
+                name: "Blessing A.",
+                location: "Abuja",
+                text: "Started as a visual assistant and earned quickly with simple gigs."
+            },
+            {
+                name: "Olamide K.",
+                location: "Lagos",
+                text: "Automation tools helped me get paid in just two weeks."
+            },
+            {
+                name: "Chukwudi E.",
+                location: "Enugu",
+                text: "ICON plan + NFT uploads = first-week earnings secured."
+            },
+            {
+                name: "Fatima B.",
+                location: "Kano",
+                text: "Snap & Earn covered my data bills in under 10 days."
+            },
+            {
+                name: "James O.",
+                location: "Ibadan",
+                text: "AI moderation tasks were straightforward and consistent."
+            },
+            {
+                name: "Ezinne A.",
+                location: "Port Harcourt",
+                text: "Design tools unlocked steady orders from small brands."
+            },
+            {
+                name: "Suleiman M.",
+                location: "Kaduna",
+                text: "Chat assistant roles were flexible with my schedule."
+            },
+            {
+                name: "Linda C.",
+                location: "Owerri",
+                text: "DeFi tasks boosted my weekly totals — pleasantly surprised."
+            },
+            {
+                name: "Tobi S.",
+                location: "Abeokuta",
+                text: "Evening Web3 tasks worked great with my day job."
+            },
+            {
+                name: "Peace J.",
+                location: "Uyo",
+                text: "ICON plan gave me multiple simple earning paths."
+            }
+        ];
+        const tBox = qs('tBox');
+        let ti = 0;
+
+        function rotateT() {
+            const t = testimonials[ti];
+            tBox.classList.remove('show');
+            setTimeout(() => {
+                tBox.innerHTML = `<p>“${t.text}”</p><p><strong>${t.name}</strong> <em>from ${t.location}</em></p>`;
+                tBox.classList.add('show');
+            }, 250);
+            ti = (ti + 1) % testimonials.length;
+        }
+        rotateT();
+        setInterval(rotateT, 7000);
+    </script>
+</body>
+
+</html>

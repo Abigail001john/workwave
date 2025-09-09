@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Register - WorkWave | Digital Freelancing Toolkit</title>
+
+    <!-- Meta Description -->
+    <meta name="description" content="Register now on WorkWave to access digital tools, automation gigs, and earn daily. Choose a plan and unlock your freelance toolkit today.">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://workwaveweb.com/register/" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Register - WorkWave" />
+    <meta property="og:description" content="Join WorkWave and get access to digital tools and daily earning opportunities. Start earning instantly!" />
+    <meta property="og:image" content="https://workwaveweb.com/assets/images/form-preview.jpg" />
+    <meta property="og:url" content="https://workwaveweb.com/register/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Register - WorkWave" />
+    <meta name="twitter:description" content="Unlock digital freelance tools and AI-powered earning streams on WorkWave. Join today." />
+    <meta name="twitter:image" content="https://workwaveweb.com/assets/images/form-preview.jpg" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #1A002D;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero-header {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: linear-gradient(to bottom, #2D0A45, #1A002D);
+        }
+
+        .hero-img {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+            margin: 0 auto 1rem auto;
+            display: block;
+            border-radius: 10px;
+            object-fit: contain;
+        }
+
+        .logo-link {
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .logo-img {
+            width: 140px;
+            display: block;
+            margin: 0 auto;
+            transition: transform 0.3s ease;
+        }
+
+        .logo-img:hover {
+            transform: scale(1.05);
+        }
+
+        .register-form-section {
+            padding: 2rem 1rem;
+            background-color: #250038;
+            text-align: center;
+        }
+
+        .form-container {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 0.8rem;
+            margin: 0.8rem 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #fff;
+            color: #1A002D;
+            font-size: 1rem;
+        }
+
+        .btn-gradient {
+            background: linear-gradient(to right, #FF6FB1, #FFD1A8);
+            color: #1A002D;
+            padding: 0.9rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 30px;
+            width: 100%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-gradient:hover {
+            transform: scale(1.05);
+        }
+
+        .testimonials {
+            background: #2D0A45;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        .testimonials h3 {
+            color: #FFD1A8;
+            margin-bottom: 2rem;
+        }
+
+        .testimonial-container {
+            max-width: 600px;
+            margin: auto;
+            background: #30004A;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: opacity 0.6s ease-in-out;
+            opacity: 0;
+        }
+
+        .testimonial-container.show {
+            opacity: 1;
+        }
+
+        .testimonial-container p {
+            margin: 0.5rem 0;
+            line-height: 1.6;
+        }
+
+        .testimonial-container strong {
+            color: #FFD1A8;
+        }
+
+        .testimonial-container em {
+            color: #FF6FB1;
+            font-style: normal;
+        }
+
+        .simple-footer {
+            text-align: center;
+            padding: 1.5rem 1rem;
+            font-size: 0.9rem;
+            color: #FFD1A8;
+            background-color: #1A002D;
+        }
+
+        @media (max-width: 768px) {
+            .hero-img {
+                max-height: 200px;
+            }
+            input,
+            select,
+            .btn-gradient,
+            .testimonial-container {
+                font-size: 0.95rem;
+            }
+            .testimonial-container {
+                padding: 1rem;
+            }
+        }
+
+        .powered-by-btn {
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+            background: #FFD1A8;
+            color: #1A002D;
+            font-weight: 600;
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-size: 11px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            text-decoration: none;
+            z-index: 9999;
+            transition: all 0.3s ease;
+            line-height: 1.3;
+        }
+
+        .powered-by-btn:hover {
+            background: linear-gradient(to right, #FF6FB1, #FFD1A8);
+            color: #1A002D;
+            transform: scale(1.05);
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="hero-header">
+        <a href="/" style="text-decoration: none; color: inherit; display: flex; align-items: center; justify-content:center;">
+      <img src="/assets/images/logo.png" alt="WorkWave Logo" style="height: 40px; margin-right: 10px;" />
+    </a>
+        <img src="/assets/images/form.jpg" alt="Hero Image" class="hero-img" />
+        <h1>Join WorkWave Now</h1>
+        <p>Unlock daily earnings, automation tools & visual gigs.</p>
+    </header>
+
+    <section class="testimonials">
+        <h3>🌟 What Others Are Saying</h3>
+        <div class="testimonial-container" id="testimonialSlider"></div>
+    </section>
+
+    <section class="register-form-section">
+        <div class="form-container">
+            <h2>Register</h2>
+            <form id="registerForm">
+                <input type="text" id="fullName" placeholder="Full Name" required />
+                <input type="text" id="username" placeholder="Username" required />
+                <input type="email" id="email" placeholder="Email Address" required />
+                <input type="tel" id="phone" placeholder="Phone Number" required />
+                <select id="package" required>
+          <option value="20000">TITAN Access (₦20,000)</option>
+          <option value="10000">ICON Access (₦10,000)</option>
+        </select>
+
+                <!-- MANUAL PAYMENT FLOW  -->
+<a href="https://selar.com/y877167087" target="_blank" class="btn-gradient">
+  Continue to Payment Page
+</a>
+
+                <small style="display:block; margin-top:8px; color:#FFD1A8;">
+          You’ll see the bank account details on the next page.
+        </small>
+            </form>
+        </div>
+    </section>
+
+    <a href="https://josephaaijay.vercel.app" class="powered-by-btn" target="_blank" title="Visit Nexa by AaiJay">
+    <small>BUILT by<br><strong>NexaTech</strong></small>
+  </a>
+
+    <!-- Not in Nigeria Message -->
+    <div style="text-align: center; margin: 2rem 0; font-size: 0.95rem;">
+        <p>
+            🌍 <strong>Not in Nigeria?</strong> Message us directly on WhatsApp:
+            <a href="https://wa.me/2348162659923?text=Hi%20WorkWave%20Support%2C%20I%27m%20not%20in%20Nigeria%20but%20I%27d%20love%20to%20join.%20Please%20guide%20me%20on%20how%20to%20proceed." target="_blank" style="color: #FFD1A8; text-decoration: underline;">
+        Click to Chat with Admin
+      </a>
+        </p>
+    </div>
+
+    <footer class="simple-footer">
+        <p>© 2025 WorkWave. All rights reserved.</p>
+    </footer>
+
+    <script>
+        /* ---- Testimonials rotation (unchanged) ---- */
+        const testimonials = [{
+                name: "Blessing A.",
+                location: "Abuja",
+                text: "Started as a visual assistant using the TITAN Plan. Earned ₦85,000 in just 8 days doing simple content gigs for brands."
+            },
+            {
+                name: "Olamide K.",
+                location: "Lagos",
+                text: "Used the automation tools under the TITAN Access and made ₦125,000 in 2 weeks managing influencer tasks."
+            },
+            {
+                name: "Chukwudi E.",
+                location: "Enugu",
+                text: "Joined ICON Access, did NFT minting gigs and made ₦35,000 in his first week."
+            },
+            {
+                name: "Fatima B.",
+                location: "Kano",
+                text: "Focused on Snap & Earn features with TITAN plan. Made ₦65,000 in 10 days uploading product visuals."
+            },
+            {
+                name: "James O.",
+                location: "Ibadan",
+                text: "Used the guided workflow system to complete AI moderation tasks. Earned ₦50,000 in 7 days."
+            },
+            {
+                name: "Ezinne A.",
+                location: "PH",
+                text: "Created visual designs with TITAN tools and earned ₦100,000 in under 2 weeks from multiple daily gigs."
+            },
+            {
+                name: "Suleiman M.",
+                location: "Kaduna",
+                text: "Started with ICON Plan, earned ₦40,000 within 5 days doing chat assistant roles."
+            },
+            {
+                name: "Linda C.",
+                location: "Owerri",
+                text: "Leveraged TITAN’s DeFi task options and grew ₦130,000 in 12 days. She now mentors others."
+            },
+            {
+                name: "Tobi S.",
+                location: "Abeokuta",
+                text: "Tapped into Web3 tasks with TITAN Access. Earned ₦90,000 in 9 days, mostly during evenings."
+            },
+            {
+                name: "Ngozi I.",
+                location: "Awka",
+                text: "Earned ₦110,000 in just 11 days combining AI automation + Snap & Earn with TITAN plan."
+            },
+            {
+                name: "Frank U.",
+                location: "Benin",
+                text: "NFT design contributor under TITAN tier. He made ₦120,000 in 2 weeks from freelance minting tasks."
+            },
+            {
+                name: "Rita O.",
+                location: "Makurdi",
+                text: "Earned ₦55,000 in 6 days doing remote support roles on the TITAN toolkit dashboard."
+            },
+            {
+                name: "Hadiza T.",
+                location: "Sokoto",
+                text: "Used the TITAN Access to handle content moderation and crypto product tasks. ₦140,000 in 13 days!"
+            },
+            {
+                name: "Emmanuel D.",
+                location: "Calabar",
+                text: "Consistently earned ₦150,000 from brand video tasks and AI captioning with TITAN plan in 3 weeks."
+            },
+            {
+                name: "Peace J.",
+                location: "Uyo",
+                text: "ICON Access helped her earn ₦98,000 in 15 days doing NFT uploads, Snap & Earn, and login bonuses."
+            }
+        ];
+        let current = 0;
+        const container = document.getElementById("testimonialSlider");
+
+        function rotateTestimonials() {
+            const t = testimonials[current];
+            container.classList.remove("show");
+            setTimeout(() => {
+                container.innerHTML = `<p>“${t.text}”</p><p><strong>${t.name}</strong> <em>from ${t.location}</em></p>`;
+                container.classList.add("show");
+            }, 300);
+            current = (current + 1) % testimonials.length;
+        }
+        setInterval(rotateTestimonials, 6000);
+        rotateTestimonials();
+
+        // ---- Save form data, then redirect to payment page (no WhatsApp here) ----
+        document.getElementById("continueToPayment").addEventListener("click", function() {
+            const name = document.getElementById("fullName").value.trim();
+            const username = document.getElementById("username").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const phone = document.getElementById("phone").value.trim();
+            const packageEl = document.getElementById("package");
+            const amount = parseInt(packageEl.value, 10);
+            const packageName = packageEl.options[packageEl.selectedIndex].text;
+
+            // Basic validation
+            if (!name || !username || !email || !phone || isNaN(amount)) {
+                alert("Please fill out all fields and select a package.");
+                return;
+            }
+
+            // Save for payment page
+            const regData = {
+                name,
+                username,
+                email,
+                phone,
+                amount,
+                packageName
+            };
+            try {
+                sessionStorage.setItem("ww_reg", JSON.stringify(regData));
+            } catch (e) {}
+
+            // Redirect to payment page (also pass as query fallback)
+            const params = new URLSearchParams({
+                name,
+                username,
+                email,
+                phone,
+                amount: String(amount),
+                packageName
+            });
+            window.location.assign(`/payment?${params.toString()}`);
+        });
+    </script>
+
+</body>
+
+</html>
